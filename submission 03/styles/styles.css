@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Setting Font yang digunakan  */
+html, body{
+    font-family: 'Philosopher', 'Roboto', sans-serif;
+}
+
+
+/* Start of Header */
+main{
+    width: 1024px;
+    margin: 0 auto; 
+    margin-top: 10px;
+    /* height: 100vh; */
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0; 
+    left: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+    margin-inline: auto;
+    /* border: 5px solid red; */
+    /* min-height: 75vh; */
+}
+
+.container-dtl{
+    width: 100%;
+    border-radius: 8px;
+    background-color:#bbb194;
+    margin: 5px;
+}
+
+.shadow {
+    box-shadow: 0 10px 10px rgba(9, 10, 16, 0.5), 0 15px 40px rgba(5, 8, 17, 0.4);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    width: 95%;
+    margin: auto;
+
+    /* Set the hr color */
+    color: #fff;  /* old IE */
+    background-color: #fff;  /* Modern Browsers */
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+.form-group {
+    display: grid;  
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+
+}
+
+.form-group-dtl {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 0.1fr auto;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px 10px 20px;
+}
+
+.cek-box{
+    display: inline;
+}
+
+.form-group-dtl .sub-dtl{
+    grid-column: 1/ span 2;
+}
+
+.form-group-dtl .sub-dtl .sub-dlt01{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* 
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+    background-color: white;
+    overflow: hidden;
+} */
+
+/* Data List untuk menampilkan data*/
+/* .data-list-wrap{
+    width: 100%;
+}
+
+.data-list{
+    box-sizing: border-box;
+    display: grid;
+     grid-template-columns: repeat(auto-fill, 450px); 
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 0px;
+
+} */
+/* 
+.data-list-container{
+    padding: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+} */
+
+/* Start content */
+.form01{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 10px 0;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: sans-serif;
+    border-radius: 16px;
+    padding: 10px 24px;
+    border: 2px solid #775e06;
+    color: black;
+    font-size: 15px;
+    margin-top: 0;
+    margin-right: 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #653d02;
+    color: white;
+}
+
+
+.form-group label, #baca {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-right:  20px;
+}
+
+input[type=text], input[type=date], input[type=number], input[type=checkbox], input[type=search], .btn-search:focus, .btn-submit:focus, textarea {
+    outline: none;
+}
+
+input[type=text], input[type=date], input[type=number], input[type=search], textarea {
+    font-family: sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #827102;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+
+.check-button {
+    width: 30px;
+    height: 30px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    color: #000;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+    color: #000;
+}
+
+/* .search_section > form {
+    padding: 16px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_section label {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-right:  20px;
+} */
+
+.btn-search {
+    width: fit-content;
+    font-family: sans-serif;
+    border-radius: 16px;
+    padding: 10px 20px;
+    border: 2px solid #775e06;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    height: fit-content;
+}
+@media only screen and (max-width: 1024px) {
+    main{
+        width:100%;
+        grid-template-columns: auto;
+    }
+
+
+    .container{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    main{
+        width:100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .form-group-dtl{
+        grid-template-columns: auto;
+    }
+
+    .form-group-dtl .sub-dtl{
+        grid-column: unset;
+    }
+
+    .form-group-dtl .sub-dtl .sub-dlt01{
+        flex-wrap: wrap;
+    }
+}

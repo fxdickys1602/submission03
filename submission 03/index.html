@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Noted</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <header-bar></header-bar>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div id="entry-form" class="container-dtl shadow">
+                <h2>Tambah Data</h2>
+                <hr>
+
+                <form class="form-add" id="addForm">
+                    <div class="form-group">
+                        <div class="form-group-dtl">
+                            
+                            <label for="title">Judul </label>
+                            <input type="text" id="title" required maxlength="100">
+
+                            <label for="catatan">Catatan </label>
+                            <textarea  rows="4" cols="50" name="catatan" id='catatan' required maxlength="200"></textarea>
+                            
+                            <span class="sub-dtl">
+                                <div class="sub-dlt01">
+                                <div class="cek-box">
+                                    <label for="archived">Selesai dibaca</label>
+                                    <input type="checkbox" id="archived">
+                                </div>
+
+                                <input type="submit" value="Submit" name="Submit" class="btn-submit" id="submitBtn">
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="search" class="container-dtl shadow">
+                <h2>Cari Catatan</h2><hr><br>
+                <search-bar></search-bar>
+            </div>
+
+            <div id="dataListContainer" class="data-list-container container-dtl shadow">
+                <div class="placeholder query-waiting">Waiting for search keyword</div>
+                <div class="placeholder search-loading">Loading</div>
+                
+                <note-list></note-list>
+            </div>
+        </div>        
+    </main>
+    
+    <footer>
+        <footer-bar></footer-bar>
+    </footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>

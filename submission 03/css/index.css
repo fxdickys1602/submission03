@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+@font-face {
+    font-family: 'Glyphicons Halflings';
+  
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  }
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.glyphicon-ok:before {
+    content: "\e013";
+}
+*/
+
+*{
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Philosopher','Roboto', sans-serif;
+    height: 200dvh;
+}
+
+header{
+    background-color: #F0EBE3;
+    padding: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container{
+    width: 1024px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #bbb194;
+    padding: 15px;
+    flex-grow: 1;
+    min-height: 50px;
+}
+
+
+.text-center{
+    text-align: center;
+}
+.shadow {
+    box-shadow: 0 5px 10px rgba(9, 10, 16, 0.05), 0 15px 40px rgba(5, 8, 17, 0.2);
+}
+
+.container h2 {
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+.container-dtl01{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 35px;
+    justify-content: center;
+}
+
+.container-dtl02{
+    width: 100%;
+    height: 75px;
+    padding-bottom: 35px;
+    justify-content: center;
+}
+
+.container-dtl{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 200px;
+    height: fit-content;
+    margin: 0;
+    left: 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.row{
+    flex-basis: 50%;
+
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    flex-grow: 1;
+    height: fit-content;
+
+}
+
+.List {
+    flex-basis: 70%;
+    display: flex;
+    min-height: 400;
+    position: relative;
+}
+
+.btn-search {
+    width: fit-content;
+    font-family: sans-serif;
+    border-radius: 16px;
+    padding: 10px 20px;
+    border: 2px solid #775e06;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+    height: 50px;
+    justify-content: center;
+  }
+
+ .search_section > h2 {
+    color: black;
+    text-align: center;
+ }
+
+.search_section label {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-right:  20px;
+}
+
+
+.btn-submit {
+    width: fit-content;
+    font-family: sans-serif;
+    border-radius: 16px;
+    padding: 10px 24px;
+    border: 2px solid #775e06;
+    color: black;
+    font-size: 15px;
+    margin-top: 0;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #653d02;
+    color: white;
+}
+
+
+.row > h2{
+    font-family: 'Roboto';
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 10px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h2 {
+    margin-bottom: unset;
+}
+
+.item > .inner p {
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 16px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: left;
+}
+
+.form-title {
+    margin: 0;
+    justify-content: center;
+}
+
+.form-group label, #baca {
+    font-size: 20px;
+    font-weight: lighter;
+    padding-right:  20px;
+}
+
+.cek-box{
+    display: flex;
+}
+input[type=text], input[type=date], input[type=number], input[type=checkbox], input[type=search], .btn-search:focus, .btn-submit:focus {
+    outline: none;
+}
+
+input[type=text], input[type=date], input[type=number], input[type=search] {
+    font-family: sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #827102;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+    transform: scale(1.5);
+    padding: 5px;
+    border: 2px solid #36ff09;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.checkboxtext{
+  /* Checkbox text */
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.list-item {
+    flex-basis: 90%;
+}
+
+.check-button {
+    width: 30px;
+    height: 30px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    color: #000;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+    color: #000;
+}
+
+.edit-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/edit-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.edit-button:hover {
+    background: url('../assets/edit-fill.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button, .edit-button {
+    outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .container-dtl{
+        flex-direction: column;
+    }
+}
+
